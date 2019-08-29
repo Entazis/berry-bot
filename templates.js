@@ -73,5 +73,4 @@ module.exports = (bot) => {
         });
 
     });
-    //bot.on('referral', (payload, chat, data) => {});
 };

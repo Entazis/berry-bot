@@ -6,7 +6,6 @@
 //TODO: fix chat typing times
 
 //https://emojipedia.org/
-//https://photos.google.com/share/AF1QipOBDKpvyhQlGhT10QLj2K1Al5HD9cq3lwNEY5ibRMf1jP3r63QSHV3Tx2Bu_yADXA?key=RXBsMXdfU0hhQmFCRVhkU3V6RVV2czY4eHlIakZ3
 module.exports = (bot) => {
 
     const startIntro = (convo) => {

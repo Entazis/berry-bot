@@ -1,12 +1,9 @@
 'use strict';
 const BootBot = require('bootbot');
 const config = require('config');
-//const echoModule = require('./modules/echo');
-//const helpModule = require('./modules/help');
 const starterModule = require('./modules/starter');
 const fetch = require('node-fetch');
 const GIPHY_URL = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=';
-var CronJob = require('cron').CronJob;
 
 const bot = new BootBot({
     accessToken: config.get('access_token'),
@@ -66,18 +63,3 @@ bot.on('postback:PERSISTENT_MENU_CSS', (payload, chat) => {
 bot.setGetStartedButton('Szia Berry-bot!');
 
 bot.start();
-
-/*
-var job = new CronJob('* * * * *', function() {
-         // Runs every weekday (Monday through Friday)
-         // at 11:30:00 AM. It does not run on Saturday
-         // or Sunday.
-        console.log('cron has been triggered');
-        bot.say('1916767195018077', 'cron trigger');
-    }, function () {
-        // This function is executed when the job stops
-        console.log('cron job has been stopped')
-    },
-    true // Start the job right now
-);
-*/
